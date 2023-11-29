@@ -1,6 +1,6 @@
 # Terraform
 
-Terraform scripts that I use in order to provision my servers with jumphost (for testing purposes)
+Terraform scripts that I use to provision my servers with jumphost (for testing purposes)
 
 ## Quickstart
 
@@ -35,28 +35,7 @@ terraform apply destroy.plan
   ssh -A -J <username>@<bastion host ip> <username>@<internal server ip>
   ```
 - Note: for AWS, might require different users - see OS. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-to-linux-instance.html
-- Google Cloud Platform
-  - [x] docker
-  - [x] etcd cluster
-  - [x] mariadb
-  - [x] mongodb
-  - [x] nats
-  - [x] nginx
-  - [x] redis
-  - [x] cassandra
-  - [x] memcached
-  - [ ] postgresql
-  - [ ] couchdb
-  - [ ] elasticsearch
-  - [ ] kafka
-  - [ ] rabbitmq
-  - [ ] consul
-  - [ ] vault
-  - [ ] nomad
-  - [ ] mesos
-  - [x] jenkins (basic)
-  - [] simple golang web application + custom machine image + load balancing
-  - [] simple golang web application to upload and download files into S3
+
 
 ## Tripped problems
 
