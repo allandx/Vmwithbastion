@@ -1,6 +1,6 @@
 # Terraform
 
-Terraform scripts that I use in order to provision my servers (for testing purposes)
+Terraform scripts that I use in order to provision my servers with jumphost (for testing purposes)
 
 ## Quickstart
 
