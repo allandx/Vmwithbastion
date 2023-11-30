@@ -18,7 +18,7 @@ Test deployment of infrastrucutre to Amazon. The most basic of setups would invo
 - Incoming tcp traffic (e.g. ssh) can reply back with epheremal ports
 
 ## SSH commands
-chmod 400 /path/to/pem/file
-ssh-add "/path/to/pem/file"
-ssh -A -i "/path/to/pem/file" username@public_ip_of_bastion_server
-ssh username@private_ip_of_app_server
+- chmod 400 /path/to/pem/file
+- ssh-add "/path/to/pem/file"
+- ssh -A -i "/path/to/pem/file" username@public_ip_of_bastion_server
+- ssh username@private_ip_of_app_server

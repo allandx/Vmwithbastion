@@ -26,17 +26,6 @@ terraform plan -out destroy.plan -destroy
 terraform apply destroy.plan
 ```
 
-
-
-## Common features
-
-- Capability to set up bastion server -> internal servers should have access to the internet
-  ```bash
-  ssh -A -J <username>@<bastion host ip> <username>@<internal server ip>
-  ```
-- Note: for AWS, might require different users - see OS. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-to-linux-instance.html
-
-
 ## Tripped problems
 
 - Enabling/disabling certain components to be provisioned. Some blogs were mentioning of using `count` field and setting it to 0 to "disable it" and 1 to "enable it". Also, needed to create a range of servers based on some instance number - so hence, the following:
